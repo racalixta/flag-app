@@ -61,9 +61,9 @@ const Home = () => {
     }
 
   return (
-    <div className='w-screen bg-gray-100 dark:bg-gray-800 dark:text-white'>
+    <div className='bg-gray-100 dark:bg-gray-800 dark:text-white'>
 
-        <div className='w-screen shadow-md py-6 px-3 bg-white dark:bg-gray-700 dark:text-white mb-16'>
+        <div className='w-full shadow-md py-6 px-3 bg-white dark:bg-gray-700 dark:text-white mb-16'>
 
             <div className="flex container mx-auto">
 
@@ -79,7 +79,7 @@ const Home = () => {
 
         <div className='flex container mx-auto mb-16'>
 
-            <i className="fa fa-search my-auto -mr-5 z-10 pr-2 pl-3 py-5 rounded-md text-gray-400"></i>
+            <i className="fa fa-search my-auto -mr-9 z-10 pr-2 pl-3 py-5 rounded-md text-gray-400"></i>
             <input 
                 type="text" 
                 placeholder='Search for a country...' 
@@ -101,7 +101,7 @@ const Home = () => {
 
         </div>
 
-        <div className='container grid grid-cols-4 gap-16 mx-auto'>
+        <div className='container grid grid-cols-4 gap-10 mx-auto'>
 
             {countries.map((country, index) => (
                 <Link to={{ pathname: 'details', state: country}} key={index}>
